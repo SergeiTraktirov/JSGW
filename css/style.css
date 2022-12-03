@@ -32,14 +32,21 @@ p{
 .top__ {
 		align-self: center;
 		text-align: center;
+		border: 5px solid grey;
+		
+	}
+	
+	.top__>img {
+		max-width: 200px;
+		min-width: 100px;
+		border-radius: 50%;
+	}
+	.top__header {
+		position: sticky;
+		top: 0px;
+		border: 5px solid greenyellow;
 
 }
-.top__>img {
-	max-width: 200px;
-	min-width: 100px;
-	border-radius: 50%;
-}
-
 body{
  	background: url('../img/bckgrnd1.jpg');
   	background-repeat: repeat;
