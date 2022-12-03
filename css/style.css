@@ -1,0 +1,184 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top; }
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+/* Урок 12 мин 28. Позиционирование через бэкгроунд изображение и отображение списка (li) */
+h1	{
+	font-size: 60px;	
+	padding: 10px 10px 15px 10px;	
+}
+h2	{
+	font-size: 40px;
+	padding: 10px 10px 10px 10px;	
+}
+p{
+	font-size: 15px;
+	padding: 10px 10px 10px 10px;	
+
+}
+.top__ {
+		align-self: center;
+		text-align: center;
+
+}
+.top__>img {
+	max-width: 200px;
+	min-width: 100px;
+	border-radius: 50%;
+}
+
+body{
+ 	background: url('../img/bckgrnd1.jpg');
+  	background-repeat: repeat;
+/*  	background-attachment: fixed; 
+  	background-position: center;
+  	background-size: 100%;	
+*/	font-family: 'Oswald', serif;
+	padding: 10px 10px 10px 10px;
+}
+img{
+	max-width: 150px;
+	min-width: 175px;
+
+}
+
+.block__ {
+	border: 15px solid black;
+	display: flex;
+	justify-content: flex-start;
+}
+	.block__img {
+		border: 10px solid red;
+		width: 200px;
+
+}		
+	.block__img>img{
+		object-fit: contain; 
+		max-width: 150px;
+		min-width: 75px;
+		size: auto;
+		vertical-align: center; /*?*/
+}
+	.block__txt {
+		border: 5px solid  green;
+		padding: 10px 10px 10px 10px;
+}
+.bottom__ {
+	border: 15px solid black;
+		align-self: center;
+		text-align: center;
+}
+	.bottom__>a>img {
+		max-width: 70px;
+		min-width: 20px; /*?*/
+}
+
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  justify-content: flex-end; /*?*/
+  color: black;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+ /* font-family: 'Montserrat', sans-serif;
+ text-transform: uppercase;
+*/   letter-spacing: 2px;
+  background-image: linear-gradient(to right, #d3d3d3 0%, #a9a9a9 51%, #808080 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.gradient-button:hover {
+  background-position: right center;
+}
+
+/*
+================================================
+
+*/
+
+
+.product-item {
+   width: 300px;
+   text-align: center;
+   margin: 0 auto;
+   border-bottom: 2px solid #F5F5F5;
+   background: white;
+   font-family: "Open Sans";
+   transition: .3s ease-in;
+}
+.product-item:hover {
+   border-bottom: 2px solid #fc5a5a;
+}
+.product-item img {
+   display: block;
+   width: 100%;
+}
+.product-list {
+   background: #fafafa;
+   padding: 15px 0;
+}
+.product-list h3 {
+   font-size: 18px;
+   font-weight: 400;
+   color: #444444;
+   margin: 0 0 10px 0;
+}
+.price {
+   font-size: 16px;
+   color: #fc5a5a;
+   display: block;
+   margin-bottom: 12px;
+}
+.button {
+   text-decoration: none;
+   display: inline-block;
+   padding: 0 12px;
+   background: #cccccc;
+   color: white;
+   text-transform: uppercase;
+   font-size: 12px;
+   line-height: 28px;
+   transition: .3s ease-in;
+}
+.product-item:hover .button {
+   background: #fc5a5a;
+}
+
+
+/*	align-items: center;
+	justify-content: center;
+/*	display:  flex; /*inline-grid;
+/*	align-self: center;
+	text-align: center;
+*/
+/*
+		align-self: auto;
+.block>img{
+	width: 150px;
+}
+.block>h2{
+	font-size: 30px;
+}
+.block>span{
+	font-size: 15px;
+	margin-left: 100px;
+}
+.block>p{
+}
+*/
+.
