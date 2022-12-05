@@ -142,7 +142,7 @@ button{
 */
 }
 .bottom__ {
-	border-top: 5px solid grey; */
+	border-top: 5px solid grey;
 		align-self: center;
 		text-align: center;
 }
@@ -217,4 +217,3 @@ button{
    transition: .3s ease-in;
 }
 
-================================================
